@@ -1,4 +1,4 @@
----
+
 
 # Projeto de Sorteio de Cards
 ## Sumário
@@ -205,5 +205,3 @@ function cardView() {
 ## Licença
 
 Este projeto é licenciado sob a [MIT License](LICENSE).
-
----
