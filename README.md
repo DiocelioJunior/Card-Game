@@ -185,7 +185,7 @@ function cardView() {
 
 1. **Clone o Repositório**:
    ```bash
-   git clone https://github.com/seuusuario/repositorio.git
+   git clone https://github.com/DiocelioJunior/Card-Game.git
    ```
 
 2. **Abra o Arquivo HTML**:
