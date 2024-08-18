@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Sora", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #f2f2f2;
+}
+
+.arrow{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #b2de79;
+    cursor: pointer;
+    width: 45px;
+}
+
+.arrow span{
+    font-size: 28px;
+
+}
+
+#card-1{
+    display: flex;
+}
+
+#card-2{
+    display: none;
+}
+
+#card-3{
+    display: none;
+}
+
+.card{
+    width: 100%;
+    max-width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.card-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-att{
+    background-color: #424242;
+    width: 100%;
+    height: 49%;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.line{
+    width: 100%;
+    height: 1%;
+    background-color: #b2de79;
+}
+
+.card-level{
+    width: 100%;
+    position: absolute;
+    right: -20px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-level-nmb{
+    width: 50px;
+    height: 50px;
+    background-color: #424242;
+    border: 5px solid #b2de79;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-att-type{
+    width: 27%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-att-type span{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 10px;
+    font-size: 36px;
+    color: #f2f2f2;
+}
+
+.card-att-hero{
+    width: 68%;
+    height: 85%;
+}
+
+.card-att-hero-sts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 25px;
+    gap: 5px;
+}
+
+#desc-text{
+    font-size: 11px;
+}
+
+h1{
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+p{
+    color: #f2f2f2;
+    font-size: 10px;
+}
+
+img{
+    width: 100px;
+}

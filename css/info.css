@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+    /* Cores primárias */
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+
+    /* Cores de fundo */
+    --background-color: #f4f4f4;
+    --background-dark-color: #000;
+    --background-dark-color-2: #18191a;
+
+    /* Cores de texto */
+    --text-color: #333;
+    --text-light-color: #fff;
+    --text-muted-color: #7f8c8d;
+
+    /* Cores de borda */
+    --border-color: #ccc;
+    --border-dark-color: #34495e;
+
+    /* Cores de alerta */
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --warning-color: #f1c40f;
+    --info-color: #3498db;
+
+    /* Cores de sombra */
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --shadow-dark-color: rgba(0, 0, 0, 0.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-light-color);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sora", sans-serif;
+    background-color: var(--background-dark-color);
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    height: 100vh;
+}
+
+.item-detail{
+   width: 100%;
+   margin-top: 100px;
+}
+
+.item-detail p{
+    padding: 0 15px;
+}
+
+.item-detail-title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.item-detail-title h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.item-detail-title p{
+    margin-bottom: 35px;
+}
+
+.item-detail-image{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.cards{
+ margin-top: 35px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+ /* Estilos para os cards */
+ .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.card {
+    background-color: var(--background-dark-color-2);
+    background-size: 100%;
+    width: 100%;
+    height: 270px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.card-nmb{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card .speak ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card .speak ul li {
+    margin-bottom: 5px;
+}
+
+

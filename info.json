@@ -1,0 +1,64 @@
+[
+    {
+        "id": "1",
+        "titulo": "Universo 436",
+        "descrição": "Cards inspirados em um universo original, com uma narrativa fascinante sobre cinco guardiões que lutam para preservar a paz e a harmonia em todo o cosmos.",
+        "descriçãomat": "O Universo 436 é um dos muitos universos que surgiram após um experimento mal-sucedido conduzido por Hilda. Destaca-se especialmente por ser um dos poucos que quase alcançou o equilíbrio perfeito que Hilda havia idealizado.",
+        "image": "/assets/img/info/yuki.png",
+        "imagemateria": "/assets/img/info/yuki-mat.jpg",
+        "paragrafo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "autor": "Diow",
+        "ativo": true,
+        "cards": {
+            "card1": {
+                "id": 1,
+                "number": "#1",
+                "name": "Dr. Tegami Sukui",
+                "type": "Épica",
+                "nationality": "Terra 0",
+                "description": "Tegami é uma Fisica renomada focada em descobrir mais sobre a materia escura, apesar de ser jovem ja contribui bastante para os fisicos ",
+                "probability": 1,
+                "image": "/assets/img/cards/Tegami1.jpg"
+            },
+            "card2": {
+                "id": 2,
+                "number": "#2",
+                "name": "Dr. Hilda F.",
+                "type": "Épica",
+                "nationality": "Terra 0",
+                "description": "Hilda se comprometeu em descobrir um metodo para viajar no tempo e resolver a grande guerra que aflinge todos os povos do universo.",
+                "probability": 1,
+                "image": "/assets/img/cards/Hilda1.jpg"
+            }
+        }
+    },
+    {
+        "id": "2",
+        "titulo": "RPG",
+        "descrição": "Cards inspirados no universo de RPG, com bastante referencias de Tormenta 20 e D&D.",
+        "descriçãomat": "RPG (Role-Playing Game) é um tipo de jogo onde os participantes assumem papéis de personagens em um mundo fictício. Em um RPG, os jogadores criam e interpretam personagens com habilidades e histórias únicas, e participam de aventuras guiadas por um Mestre de Jogo (MJ) ou Narrador, que descreve o cenário e os desafios.",
+        "image": "/assets/img/info/rpg.png",
+        "imagemateria": "/assets/img/info/rpg-mat.jpg",
+        "paragrafo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "autor": "Diow",
+        "ativo": true,
+        "cards": {
+            
+        }
+    },
+    {
+        "id": "3",
+        "titulo": "E-grill??",
+        "descrição": "Cards inspirados em e-grills???.... Nem sei como explicar..",
+        "descriçãomat": "",
+        "image": "/assets/img/info/egrill.png",
+        "imagemateria": "/assets/img/info/egrill-mat.png",
+        "paragrafo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "autor": "Diow",
+        "ativo": true,
+        "cards": {
+            
+        }
+    }
+
+]

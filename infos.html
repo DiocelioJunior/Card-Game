@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardMaster | Seu Destino Definitivo para Coleções de Cards</title>
+    <meta name="description"
+        content="Bem-vindo ao CardMaster—onde sua paixão por colecionar e ganhar se torna realidade! Seja você um caçador de cards raros, alguém que está expandindo seu deck ou apenas aproveitando a emoção de um sorteio bem-timed, o CardMaster oferece uma experiência perfeita, feita sob medida para suas necessidades.">
+    <meta name="robots" content="">
+    <meta name="author" content="D.Coder ">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="page">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="CardMaster | Seu Destino Definitivo para Coleções de Cards">
+    <meta property="og:image" content="https://i.pinimg.com/564x/40/3f/5c/403f5c848a290d34dbd1d50f93f00cb8.jpg">
+    <meta property="og:description" content="Construa coleções únicas com o CardMaster!">
+    <meta property="article:author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="CardMaster | Seu Destino Definitivo para Coleções de Cards">
+    <meta name="twitter:creator" content="@Diowritos">
+    <meta name="twitter:description" content="Construa coleções únicas com o CardMaster!">
+    <link rel="stylesheet" href="./css/info.css">
+</head>
+
+<body>
+    <div id="item-details"></div>
+
+    <script>
+        window.onload = function () {
+            // Obtém o parâmetro 'id' da URL
+            const params = new URLSearchParams(window.location.search);
+            const itemId = params.get('id');
+
+            // Carregar o JSON com os dados dos itens
+            fetch('./info.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Filtrar o item com base no ID
+                    const item = data.find(i => i.id === itemId);
+
+                    if (item) {
+                        // Mostrar os detalhes do item
+                        const detailsDiv = document.getElementById('item-details');
+                        detailsDiv.innerHTML = `
+                        <div class="container">
+                            <div class="item-detail">
+                                <div class="item-detail-title">
+                                    <h2>${item.titulo}</h2>
+                                    <p>${item.descriçãomat}</p>
+                                    <br>
+                                </div>
+                                <div class="item-detail-image" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 30%, transparent 100%), url(${item.imagemateria});">
+                                </div>
+                                <p>${item.paragrafo}</p>
+                            </div>
+
+                            <div class="cards" id="cards-container">
+                            </div>
+                        </div>
+                        `;
+
+                        // Adicionar os cards na div .cards
+                        const cardsContainer = document.getElementById('cards-container');
+                        Object.values(item.cards).forEach(card => {
+                            const cardHTML = `
+                        <div class="card" style = "background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 60%, transparent 100%),
+    url(${card.image});">
+                            <div class="card-nmb">
+                                <h3>${card.number}</h3>
+                            </div>
+                            <div class="card-txt">
+                                <h3>${card.name}</h3>
+                                <p>${card.type}</p>
+                            </div>
+                        </div>
+                            `;
+
+                            // Adiciona o HTML do card ao container
+                            cardsContainer.innerHTML += cardHTML;
+                        });
+                    } else {
+                        document.getElementById('item-details').innerHTML = '<p>Item não encontrado.</p>';
+                    }
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+        }
+    </script>
+</body>
+
+</html>

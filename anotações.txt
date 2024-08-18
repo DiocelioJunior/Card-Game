@@ -1,0 +1,22 @@
+ "card1": {
+                "id": 1,
+                "number": "#1",
+                "name": "Hilda Dark",
+                "type": "Épica",
+                "nationality": "Terra 0",
+                "speak": {
+                    "mythical": { "text": "“Eu sou o fogo que consome tudo!”", "probability": 25 },
+                    "legendary": { "text": "“O calor do inferno é o meu lar!”", "probability": 45 },
+                    "rare": { "text": "“Cuidado com as chamas, elas podem te consumir!”", "probability": 20 },
+                    "common": { "text": "“Não há escuridão que o meu fogo não possa iluminar!”", "probability": 10 }
+                },
+                "description": "Inferno é um ser de fogo intenso, conhecido por sua força devastadora e presença imponente.",
+                "probability": 1,
+                "image": "/assets/img/cards/Hilda1.jpg"
+            },
+
+
+            Epica : 1
+            Lendaria: 5
+            Rara: 10
+            Comum: 30
